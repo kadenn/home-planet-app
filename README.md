@@ -1,21 +1,19 @@
-# home-planet-app
+# Home Planet App
 
-## Project setup
+Live Preview: https://main.d28n49lhb92f63.amplifyapp.com/
+
+## Features
+- one-page responsive application 
+- list of people and the details about their home planet
+- click on the planet name to display information regarding the planet
+- sort the table by each column
+- filter the table by searching the person’s name
+- used Vuex for state management
+- API responses cached to make API calls less "spammy"
+
+## Run project locally
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
