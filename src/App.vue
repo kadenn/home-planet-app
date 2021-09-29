@@ -17,6 +17,8 @@ export default {
     People,
   },
 };
+
+  window.pendo.initialize();
 </script>
 
 <style>

@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
+  <script>
+    (function(apiKey) {
+      (function(p, e, n, d, o) {
+        var v, w, x, y, z;
+        o = p[d] = p[d] || {};
+        o._q = o._q || [];
+        v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track'];
+        for (w = 0, x = v.length; w < x; ++w)
+          (function(m) {
+            o[m] =
+              o[m] ||
+              function() {
+                o._q[m === v[0] ? 'unshift' : 'push'](
+                  [m].concat([].slice.call(arguments, 0))
+                );
+              };
+          })(v[w]);
+        y = e.createElement(n);
+        y.async = !0;
+        y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+        z = e.getElementsByTagName(n)[0];
+        z.parentNode.insertBefore(y, z);
+      })(window, document, 'script', 'pendo');
+    })('d68361fc-a4d5-4a61-58e4-480269f10f5d');
+  </script>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
