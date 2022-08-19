@@ -1,7 +1,5 @@
 # Home Planet App
 
-Live Preview: https://main.d28n49lhb92f63.amplifyapp.com/
-
 ## Features
 - single-page responsive application 
 - list of people and the details about their home planet
